@@ -13,11 +13,11 @@ Este projeto consiste em dois scripts Python para criar e analisar mapas de nave
 - Bibliotecas: `pygame`, `numpy`, `PIL`
 
 **Como Usar:**
-1. Execute o script `desenhando_mapa.py`.
+1. Execute o script `mapGenerator.py`.
 2. Use as ferramentas na interface para desenhar obstáculos e formas geométricas no mapa.
 3. Salve o mapa gerado como `mapa.jpg` clicando no botão "Salvar Mapa".
 
-**Arquivo:** `desenhando_mapa.py`
+**Arquivo:** `mapGenerator.py`
 
 ### 2. Calculando a Rota do Robô
 
@@ -28,12 +28,12 @@ Este projeto consiste em dois scripts Python para criar e analisar mapas de nave
 - Bibliotecas: `opencv-python`, `matplotlib`, `networkx`, `numpy`, `PIL`
 
 **Como Usar:**
-1. Execute o script `calcular_rota.py`.
+1. Execute o script `dijkstraGenerator.py`.
 2. Selecione o ponto de origem e o ponto de destino clicando no mapa exibido.
 3. O script calculará a rota e a exibirá no mapa.
 4. A rota será salva em uma nova imagem e em um arquivo JSON.
 
-**Arquivo:** `calcular_rota.py`
+**Arquivo:** `dijkstraGenerator.py`
 
 ## Instalação
 
