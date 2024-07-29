@@ -97,10 +97,15 @@ class MapNavigator:
     def save_graph_image(self):
         graph_img = self.img.convert("RGB")
         draw = ImageDraw.Draw(graph_img)
+        
+        # Draw nodes in blue and edges in white with thinner lines
+        '''
         for (x, y) in self.graph.nodes:
             draw.point((x, y), fill="blue")
+        '''
         for (x1, y1), (x2, y2) in self.graph.edges:
-            draw.line((x1, y1, x2, y2), fill="white")
+            draw.line((x1, y1, x2, y2), fill="yellow", width=1)
+        
         graph_img.save("graph.jpg")
         print("Graph saved as 'graph.jpg'")
 
